@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="logo.png" width="50" alt="User Avatar">
+      </div>
+      <ul class="nav-links">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Transaction</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Payment</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Setting</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <div class="header-buttons">
+          <button class="btn login" onclick="location.href='login.html'">Login</button>
+          <button class="btn register" onclick="location.href='register.html'">Register</button>
+        </div>
+        <div class="user-avatar">
+          <img src="profile.jpg" width="50" alt="User Avatar">
+          <span>Sign out</span>
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <h2>Account Balance</h2>
+        <div class="balance">$55,01,567.00</div>
+        <div class="summary">
+          <div class="summary-item money-in">
+            <span>Money in</span>
+            <h3>$2,500.02</h3>
+          </div>
+          <div class="summary-item money-out">
+            <span>Money out</span>
+            <h3>$1,25,001.00</h3>
+          </div>
+        </div>
+
+        <div class="cards-and-transactions">
+          <div class="my-cards">
+            <h3>My Cards <span>View All</span></h3>
+            <div class="card visa">
+              <p>Visa card</p>
+              <h4>$2,200</h4>
+            </div>
+            <div class="card mastercard">
+              <p>Master card</p>
+              <h4>$650</h4>
+            </div>
+          </div>
+          <div class="transactions">
+            <h3>Transaction <span>View All</span></h3>
+            <div class="card grocery">
+              <p>Grocery</p>
+              <h4>-$400</h4>
+            </div>
+            <div class="card iesco">
+              <p>IESCO Bill</p>
+              <h4>-$120</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
