@@ -2,23 +2,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Profile</title>
+    <title>Your Profile</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h1>Your Profile</h1>
+    
+    <!-- Display Success or Error Messages -->
+    <c:if test="${not empty param.message}">
+        <p style="color: green;">${param.message}</p>
+    </c:if>
+    <c:if test="${not empty param.error}">
+        <p style="color: red;">${param.error}</p>
+    </c:if>
+
     <form action="profile" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value="${user.name}" required><br>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" value="${user.username}" required><br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" value="${user.email}" required><br>
 
-        <label for="phone">Phone:</label>
-        <input type="text" id="phone" name="phone" value="${user.phone}" required><br>
-
-        <button type="submit">Update</button>
+        <button type="submit">Update Profile</button>
     </form>
+
+    <br>
     <a href="dashboard.jsp">Back to Dashboard</a>
 </body>
 </html>

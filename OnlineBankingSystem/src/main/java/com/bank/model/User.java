@@ -3,33 +3,32 @@ package com.bank.model;
 import java.sql.Timestamp;
 
 public class User {
-    private int id;
+    private int userId;
     private String username;
     private String password;
     private String email;
     private Timestamp createdAt;
 
-    public User(int id, String username, String password, String email, Timestamp createdAt) {
-        this.id = id;
+    // Default constructor
+    public User() {
+    }
+
+    // Parameterized constructor
+    public User(int userId, String username, String password, String email, Timestamp createdAt) {
+        this.userId = userId;
         this.username = username;
         this.password = password;
         this.email = email;
         this.createdAt = createdAt;
     }
 
-    public User(String username, String password, String email) {
-        this.username = username;
-        this.password = password;
-        this.email = email;
+    // Getters and setters
+    public int getUserId() {
+        return userId;
     }
 
-    // Getters and Setters
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
