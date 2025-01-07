@@ -22,7 +22,6 @@ The Online Banking System is a web application designed to manage banking operat
    ```bash
    git clone https://github.com/mokshada182/OnlineBankingSystem.git
 2. **Setup MySQL Database**
-
 Create a database named online_banking.
 Run the SQL script provided in the database folder to create the necessary tables.
 
@@ -30,9 +29,30 @@ Run the SQL script provided in the database folder to create the necessary table
 Update the DatabaseConnection class with your MySQL username, password, and database details.
 
 4. **Build the Project**
-
 Import the project into Eclipse or IntelliJ IDEA.
 Ensure Maven dependencies are resolved.
 
-. **Deploy on Apache Tomcat**
+5. **Deploy on Apache Tomcat**
 Deploy the OnlineBankingSystem project on Apache Tomcat.
+
+
+# Folder Structure
+OnlineBankingSystem/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── com.bank.dao/         # Data Access Layer
+│   │   │   ├── com.bank.model/       # Entity Classes
+│   │   │   ├── com.bank.servlet/     # Servlets
+│   │   └── resources/
+│   └── webapp/
+│       ├── WEB-INF/
+│       │   ├── web.xml               # Deployment Descriptor
+│       ├── css/                      # Stylesheets
+│       ├── js/                       # JavaScript Files
+│       ├── jsp/                      # JSP Pages
+│       └── index.jsp
+├── database/
+│   └── online_banking.sql            # Database Schema
+└── pom.xml                           # Maven Configuration
+
