@@ -1,0 +1,21 @@
+### **User Manual**
+Here’s a simplified **User Manual** to help users navigate the system.
+
+#### **Accessing the System**
+1. Open the application in your web browser using the URL provided by the admin.
+2. Use your registered credentials to log in.
+
+#### **Registering as a New User**
+1. Click on the "Register" button on the login page.
+2. Fill in the required details and submit.
+
+#### **Updating Profile**
+1. Navigate to the "Profile" section from the dashboard.
+2. Edit your details and click "Update."
+
+#### **Resetting Password**
+1. Click on "Forgot Password" on the login page.
+2. Enter your email and follow the instructions sent to your email.
+
+#### **Logging Out**
+Click on the "Logout" button in the navigation bar.
