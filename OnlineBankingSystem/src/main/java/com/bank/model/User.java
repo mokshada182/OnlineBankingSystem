@@ -13,13 +13,21 @@ public class User {
     public User() {
     }
 
-    // Parameterized constructor
+    // Parameterized constructor (5 parameters)
     public User(int userId, String username, String password, String email, Timestamp createdAt) {
         this.userId = userId;
         this.username = username;
         this.password = password;
         this.email = email;
         this.createdAt = createdAt;
+    }
+
+    // Parameterized constructor (4 parameters)
+    public User(int userId, String username, String password, String email) {
+        this.userId = userId;
+        this.username = username;
+        this.password = password;
+        this.email = email;
     }
 
     // Getters and setters
